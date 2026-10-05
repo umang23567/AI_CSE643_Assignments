@@ -1,0 +1,44 @@
+{
+  "name": "n06_cap3_s9",
+  "note": "",
+  "num_packages": 6,
+  "capacity": 3,
+  "w1": 10.0,
+  "w2": 1.5,
+  "max_destination": 5,
+  "destination_distribution": "uniform",
+  "max_trucks": null,
+  "reorder": false,
+  "packages": [
+    {
+      "id": 1,
+      "destination": 5,
+      "arrival_time": 0
+    },
+    {
+      "id": 2,
+      "destination": 4,
+      "arrival_time": 1
+    },
+    {
+      "id": 3,
+      "destination": 3,
+      "arrival_time": 1
+    },
+    {
+      "id": 4,
+      "destination": 5,
+      "arrival_time": 2
+    },
+    {
+      "id": 5,
+      "destination": 5,
+      "arrival_time": 3
+    },
+    {
+      "id": 6,
+      "destination": 2,
+      "arrival_time": 3
+    }
+  ]
+}

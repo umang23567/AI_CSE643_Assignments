@@ -1,0 +1,34 @@
+{
+  "name": "n04_cap2_s3",
+  "note": "",
+  "num_packages": 4,
+  "capacity": 2,
+  "w1": 10.0,
+  "w2": 1.5,
+  "max_destination": 6,
+  "destination_distribution": "uniform",
+  "max_trucks": null,
+  "reorder": false,
+  "packages": [
+    {
+      "id": 1,
+      "destination": 2,
+      "arrival_time": 0
+    },
+    {
+      "id": 2,
+      "destination": 1,
+      "arrival_time": 0
+    },
+    {
+      "id": 3,
+      "destination": 6,
+      "arrival_time": 1
+    },
+    {
+      "id": 4,
+      "destination": 5,
+      "arrival_time": 1
+    }
+  ]
+}

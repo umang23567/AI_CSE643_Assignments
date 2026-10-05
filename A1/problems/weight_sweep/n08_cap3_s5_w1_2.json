@@ -1,0 +1,54 @@
+{
+  "name": "n08_cap3_s5_w1_2",
+  "note": "",
+  "num_packages": 8,
+  "capacity": 3,
+  "w1": 2,
+  "w2": 1.0,
+  "max_destination": 3,
+  "destination_distribution": "uniform",
+  "max_trucks": null,
+  "reorder": false,
+  "packages": [
+    {
+      "id": 1,
+      "destination": 1,
+      "arrival_time": 0
+    },
+    {
+      "id": 2,
+      "destination": 3,
+      "arrival_time": 0
+    },
+    {
+      "id": 3,
+      "destination": 2,
+      "arrival_time": 1
+    },
+    {
+      "id": 4,
+      "destination": 3,
+      "arrival_time": 2
+    },
+    {
+      "id": 5,
+      "destination": 3,
+      "arrival_time": 2
+    },
+    {
+      "id": 6,
+      "destination": 2,
+      "arrival_time": 3
+    },
+    {
+      "id": 7,
+      "destination": 2,
+      "arrival_time": 4
+    },
+    {
+      "id": 8,
+      "destination": 2,
+      "arrival_time": 4
+    }
+  ]
+}

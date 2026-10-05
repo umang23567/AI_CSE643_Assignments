@@ -1,0 +1,54 @@
+{
+  "name": "reorder_n08_cap3_s0",
+  "note": "Buffer: load far->near (reorder)",
+  "num_packages": 8,
+  "capacity": 3,
+  "w1": 10.0,
+  "w2": 1.5,
+  "max_destination": 4,
+  "destination_distribution": "uniform",
+  "max_trucks": null,
+  "reorder": true,
+  "packages": [
+    {
+      "id": 1,
+      "destination": 4,
+      "arrival_time": 0
+    },
+    {
+      "id": 2,
+      "destination": 4,
+      "arrival_time": 0
+    },
+    {
+      "id": 3,
+      "destination": 4,
+      "arrival_time": 0
+    },
+    {
+      "id": 4,
+      "destination": 2,
+      "arrival_time": 1
+    },
+    {
+      "id": 5,
+      "destination": 2,
+      "arrival_time": 1
+    },
+    {
+      "id": 6,
+      "destination": 2,
+      "arrival_time": 1
+    },
+    {
+      "id": 7,
+      "destination": 1,
+      "arrival_time": 3
+    },
+    {
+      "id": 8,
+      "destination": 2,
+      "arrival_time": 4
+    }
+  ]
+}

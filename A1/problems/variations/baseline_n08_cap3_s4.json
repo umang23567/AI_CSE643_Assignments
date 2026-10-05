@@ -1,0 +1,54 @@
+{
+  "name": "baseline_n08_cap3_s4",
+  "note": "Baseline (arrival-order stacking)",
+  "num_packages": 8,
+  "capacity": 3,
+  "w1": 10.0,
+  "w2": 1.5,
+  "max_destination": 3,
+  "destination_distribution": "uniform",
+  "max_trucks": null,
+  "reorder": false,
+  "packages": [
+    {
+      "id": 1,
+      "destination": 2,
+      "arrival_time": 1
+    },
+    {
+      "id": 2,
+      "destination": 1,
+      "arrival_time": 2
+    },
+    {
+      "id": 3,
+      "destination": 2,
+      "arrival_time": 2
+    },
+    {
+      "id": 4,
+      "destination": 1,
+      "arrival_time": 2
+    },
+    {
+      "id": 5,
+      "destination": 1,
+      "arrival_time": 3
+    },
+    {
+      "id": 6,
+      "destination": 2,
+      "arrival_time": 3
+    },
+    {
+      "id": 7,
+      "destination": 1,
+      "arrival_time": 4
+    },
+    {
+      "id": 8,
+      "destination": 2,
+      "arrival_time": 4
+    }
+  ]
+}
