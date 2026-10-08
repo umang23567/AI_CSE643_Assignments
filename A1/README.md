@@ -64,4 +64,7 @@ Solution quality is measured primarily by the percentage gap between an algorith
   minimum number of trucks and delivery slows.
 - Reordering at a buffer and skewed (near) destinations lower the average delivery time.
 
-
+## Verification
+`self_check()` runs on 180 tiny instances and checks that (1) the incremental g equals the
+recomputed cost, (2) UCS and every A* variant match a brute-force optimum, (3) the delivery-time
+rule equals an independent step-by-step unloading simulation, and (4) no action has a negative cost.
