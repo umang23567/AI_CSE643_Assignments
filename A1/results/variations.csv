@@ -1,5 +1,5 @@
 Variation,Cost,Trucks,AvgDelivery,Expanded
-Baseline (arrival-order stacking),35.662,3.0,3.775,90.2
+Baseline (arrival-order stacking),35.662,3.0,3.775,85.5
 Buffer: load far->near (reorder),34.912,3.0,3.275,64.1
-Tight fleet (max trucks = ceil(n/cap)),35.662,3.0,3.775,90.2
-Skewed destinations (mostly near),33.506,3.0,2.338,67.8
+Tight fleet (max trucks = ceil(n/cap)),35.662,3.0,3.775,85.5
+Skewed destinations (mostly near),33.544,3.0,2.362,71.1

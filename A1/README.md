@@ -31,8 +31,10 @@ Only runtime in ms varies slightly between runs.
 1. Packages arrive in order and are loaded immediately; the last loaded is at the front (LIFO).
 2. All trucks have the same capacity; the fleet is unlimited unless `max_trucks` is set.
 3. A truck leaves when its last package is loaded, so earlier packages wait.
-4. Stop k is k time units from the centre. A package blocked by a farther one in front is
-   delivered on the return leg (travel time `2M - d`, M = farthest stop in that truck).
+4. Stop k is k time units from the centre. Packages are unloaded from the FRONT only, so the
+   unload order is forced; the truck drives to each package's stop in that order, and the
+   travel time of the i-th package is the total distance driven so far
+   (`|d1-0| + |d2-d1| + ... + |di-d(i-1)|`).
 5. Delivery time = (dispatch - arrival) + travel time.
 
 ## Search formulation
@@ -43,23 +45,23 @@ Only runtime in ms varies slightly between runs.
 - **h(n):** admissible lower bounds `h_time`, `h_trucks`, `h_combined` (their sum)
 
 ## Key findings (150 random instances, 4-12 packages)
-| Algorithm | Solved | Avg nodes | Gap to optimal |
-|---|---|---|---|
-| BFS | 87% | 5575 | 3.2% |
-| DFS | 100% | 9 | 3.2% |
-| UCS (h=0) | 100% | 1287 | 0% |
-| A* (h_time) | 100% | 600 | 0% |
-| A* (h_trucks) | 100% | 1118 | 0% |
-| A* (h_combined) | 100% | 311 | 0% |
-| Weighted A* (W=2) | 100% | 95 | 3.5% |
-| Greedy | 100% | 9 | 5.0% |
+Solution quality is measured primarily by the percentage gap between an algorithm's weighted objective and the optimal weighted objective. The delivery-time gap is also reported separately to show the effect on the delivery-time component of the objective.
+
+| Algorithm | Solved | Avg nodes | Objective gap | Delivery-time gap |
+|---|---:|---:|---:|---:|
+| BFS | 87% | 5575 | 3.5% | 19.8% |
+| DFS | 100% | 9 | 3.7% | 21.1% |
+| UCS (h=0) | 100% | 1246 | 0% | 0% |
+| A* (h_time) | 100% | 598 | 0% | 0% |
+| A* (h_trucks) | 100% | 1075 | 0% | 0% |
+| A* (h_combined) | 100% | 308 | 0% | 0% |
+| Weighted A* (W=2) | 100% | 94 | 3.5% | 24.2% |
+| Greedy | 100% | 9 | 5.4% | 34.2% |
 
 - A* with the combined heuristic is optimal and expands about 4x fewer nodes than UCS.
-- DFS and Greedy are near-instant but 3-5% worse; BFS fails first as problems grow.
+- DFS and Greedy are near-instant but have larger objective gaps than the optimal methods, with maximum single-instance objective gaps of about 30%.
 - Cheap trucks give many trucks and fast delivery; once w1/w2 is about 1 the plan uses the
   minimum number of trucks and delivery slows.
 - Reordering at a buffer and skewed (near) destinations lower the average delivery time.
 
-## Verification
-`self_check()` compares UCS and every A* variant with a brute-force optimum on 180 tiny
-instances, and checks that the incremental g equals the recomputed cost.
+

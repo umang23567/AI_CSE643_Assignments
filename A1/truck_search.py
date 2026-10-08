@@ -1,6 +1,6 @@
 """
 CSE643 Assignment 1 - Truck Loading and Delivery Planning
-Problem model, heuristics and search algorithms.
+FILE 1/3: problem model, heuristics and search algorithms.
 
 MODEL (assumptions)
 -------------------
@@ -12,13 +12,14 @@ MODEL (assumptions)
 * A truck is dispatched when its last package has been loaded, i.e. at the
   arrival time of its latest package. Earlier packages in it WAIT.
 * Destinations lie on one highway, stop k is k time units from the centre.
-  The truck drives outward; at stop d it can unload the front package(s) with
-  destination d. A package that has a farther-destination package in front of it
-  is blocked: it is only reachable on the way back, after the blocker has been
-  unloaded. With M = farthest destination in the truck:
-        travel time = d            if nothing in front has a farther destination
-        travel time = 2*M - d      otherwise (delivered on the return leg)
-  So a LIFO violation costs real delay (no arbitrary penalty weight needed).
+  Packages can only be unloaded from the FRONT, so the unloading order is forced:
+  front package first, then the next one, and so on. The truck starts at the
+  centre (position 0) and drives to each package's stop in that order, so
+        travel time of the i-th unloaded package
+            = |d_1 - 0| + |d_2 - d_1| + ... + |d_i - d_(i-1)|
+  A package with a nearer stop sitting in front of a farther one therefore costs
+  real extra driving (the truck has to come back), so no arbitrary penalty
+  weight is needed.
 * Delivery time of a package = (dispatch time - arrival time) + travel time.
 * Objective:  cost = w1 * (#trucks) + w2 * (average delivery time)
 
@@ -31,7 +32,6 @@ g(n)   = exact cost accumulated so far (every step adds a non-negative
          increment, so g is a true path cost and g(goal) = final objective).
 h(n)   = admissible lower bounds on the remaining cost (see section 2).
 """
-
 import heapq
 import math
 from collections import deque
@@ -99,14 +99,14 @@ class Problem:
         return pk
 
     def truck_details(self, truck: Tuple[int, ...]):
-        """Returns (dispatch_time, {pkg_id: delivery_time}). Last of list = front of truck."""
+        """Returns (dispatch_time, {pkg_id: delivery_time}).
+        Last of the loaded list = front of truck = unloaded first."""
         pk = self.truck_loaded(truck)
         dispatch = max(p.arrival_time for p in pk)
-        M = max(p.destination for p in pk)
-        times, max_above = {}, 0
-        for p in reversed(pk):                      # front -> back
-            travel = p.destination if p.destination >= max_above else 2 * M - p.destination
-            max_above = max(max_above, p.destination)
+        times, pos, travel = {}, 0, 0
+        for p in reversed(pk):                      # front -> back (forced unload order)
+            travel += abs(p.destination - pos)      # drive to this package's stop
+            pos = p.destination
             times[p.id] = (dispatch - p.arrival_time) + travel
         return dispatch, times
 

@@ -1,8 +1,11 @@
 """
-  python main.py                                                -> full experiment run
-  python main.py --solve problems/benchmark/n08_cap3_s0.json    -> re-solve ONE saved problem with every algorithm
+FILE 3/3: entry point.
 
-Outputs:
+  python main.py                          -> full experiment run
+  python main.py --solve problems/benchmark/n08_cap3_s0.json
+                                          -> re-solve ONE saved problem with every algorithm
+
+Outputs (created next to this file):
   problems/   one JSON file per randomly generated problem
               (benchmark/, weight_sweep/, variations/)
   results/    report.txt, benchmark_results.csv, benchmark_summary.csv,
