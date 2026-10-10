@@ -1,0 +1,41 @@
+Heuristic,Position,Depth,MM_nodes,AB_nodes,ABord_nodes,AB_saved_%,ABord_saved_%,MM_ms,AB_ms,ABord_ms,AB_speedup_x,Same_value
+field,kickoff,2,146.0,107,42,26.7,71.2,0.15,0.11,0.07,1.4,True
+field,kickoff,3,1413.0,712,244,49.6,82.7,1.49,0.83,0.39,1.8,True
+field,kickoff,4,21183.0,4681,1577,77.9,92.6,21.72,5.38,2.16,4.0,True
+field,kickoff,5,202217.0,19694,4792,90.3,97.6,216.96,23.39,7.52,9.3,True
+field,kickoff,6,,128374,29416,,,,145.11,39.73,,True
+field,midfield duel,2,109.0,83,35,23.9,67.9,0.12,0.09,0.06,1.3,True
+field,midfield duel,3,973.0,505,207,48.1,78.7,1.08,0.59,0.31,1.8,True
+field,midfield duel,4,12785.0,3178,1045,75.1,91.8,13.19,3.66,1.48,3.6,True
+field,midfield duel,5,108735.0,14607,6265,86.6,94.2,118.29,17.17,9.7,6.9,True
+field,midfield duel,6,,98430,31911,,,,110.83,44.71,,True
+field,attack in the zone,2,84.0,57,63,32.1,25.0,0.09,0.07,0.08,1.3,True
+field,attack in the zone,3,682.0,499,217,26.8,68.2,0.76,0.59,0.32,1.3,True
+field,attack in the zone,4,6837.0,2829,965,58.6,85.9,7.44,3.43,1.45,2.2,True
+field,attack in the zone,5,63505.0,15618,4077,75.4,93.6,69.36,18.74,6.57,3.7,True
+field,attack in the zone,6,,93275,22252,,,,111.98,32.38,,True
+field,defending a counter,2,99.0,46,39,53.5,60.6,0.12,0.06,0.06,2.0,True
+field,defending a counter,3,570.0,267,103,53.2,81.9,0.65,0.33,0.16,2.0,True
+field,defending a counter,4,7436.0,1388,261,81.3,96.5,7.72,1.6,0.51,4.8,True
+field,defending a counter,5,54252.0,4438,994,91.8,98.2,60.95,5.53,1.84,11.0,True
+field,defending a counter,6,,23068,4688,,,,27.74,7.24,,True
+structure,kickoff,2,146.0,81,93,44.5,36.3,0.47,0.25,0.31,1.9,True
+structure,kickoff,3,1413.0,541,364,61.7,74.2,4.52,1.69,1.2,2.7,True
+structure,kickoff,4,21183.0,6085,3709,71.3,82.5,67.86,19.56,13.07,3.5,True
+structure,kickoff,5,202217.0,18634,10060,90.8,95.0,645.51,57.2,33.04,11.3,True
+structure,kickoff,6,,122979,82659,,,,388.27,283.66,,True
+structure,midfield duel,2,109.0,45,72,58.7,33.9,0.34,0.14,0.23,2.4,True
+structure,midfield duel,3,973.0,390,322,59.9,66.9,3.08,1.21,1.04,2.5,True
+structure,midfield duel,4,12785.0,2976,2803,76.7,78.1,40.03,9.12,9.35,4.4,True
+structure,midfield duel,5,108735.0,11214,5920,89.7,94.6,339.62,33.38,19.13,10.2,True
+structure,midfield duel,6,,63560,31549,,,,196.04,104.67,,True
+structure,attack in the zone,2,84.0,73,55,13.1,34.5,0.26,0.22,0.18,1.2,True
+structure,attack in the zone,3,682.0,387,243,43.3,64.4,2.16,1.21,0.77,1.8,True
+structure,attack in the zone,4,6837.0,2782,1241,59.3,81.8,21.68,8.88,4.17,2.4,True
+structure,attack in the zone,5,63505.0,18298,4939,71.2,92.2,203.38,58.32,16.64,3.5,True
+structure,attack in the zone,6,,111352,22527,,,,351.61,74.02,,True
+structure,defending a counter,2,99.0,80,42,19.2,57.6,0.31,0.25,0.12,1.2,True
+structure,defending a counter,3,570.0,403,115,29.3,79.8,1.82,1.27,0.35,1.4,True
+structure,defending a counter,4,7436.0,1913,315,74.3,95.8,23.49,5.96,1.07,3.9,True
+structure,defending a counter,5,54252.0,6478,1534,88.1,97.2,169.01,19.89,4.94,8.5,True
+structure,defending a counter,6,,28368,12444,,,,88.23,42.18,,True

@@ -1,0 +1,71 @@
+Alpha-beta trace, depth 3, FIELD heuristic, first 3 moves of every node.
+Position:
+Turn 30/80 | A to move | Score A 0 - 0 B | ball: A3
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .   A3*   .    B1   B3 
+  r3     A4   .    B2   .    A2 
+  r2     .    .    A1   B4   .  
+  r1     .    .    .    .    .  
+  r0     .    .    .    AG   .    <- A's goal line
+
+ROOT: MAX node  alpha=-inf beta=+inf  (3 of 7 moves considered)
+    A3 dribbles (4,1)->(3,1): MIN node  alpha=-inf beta=+inf  (3 of 7 moves considered)
+        B2 dribbles (3,2)->(2,1): MAX node  alpha=-inf beta=+inf  (3 of 6 moves considered)
+            A1 dribbles (2,2)->(1,1): LEAF  h=-17.0
+          child returned -17.0 -> node value -17.0, alpha=-17 beta=+inf
+            A1 dribbles (2,2)->(1,2): LEAF  h=-17.0
+          child returned -17.0 -> node value -17.0, alpha=-17 beta=+inf
+            A1 dribbles (2,2)->(1,3): LEAF  h=-17.0
+          child returned -17.0 -> node value -17.0, alpha=-17 beta=+inf
+      child returned -17.0 -> node value -17.0, alpha=-inf beta=-17
+        B2 dribbles (3,2)->(3,3): MAX node  alpha=-inf beta=-17  (3 of 6 moves considered)
+            A1 dribbles (2,2)->(1,1): LEAF  h=11.5
+          child returned 11.5 -> node value 11.5, alpha=11.5 beta=-17
+          PRUNE (alpha >= beta): the remaining 2 move(s) are never evaluated
+      child returned 11.5 -> node value -17.0, alpha=-inf beta=-17
+        B2 dribbles (3,2)->(4,1): MAX node  alpha=-inf beta=-17  (3 of 6 moves considered)
+            A4 dribbles (3,0)->(2,0): LEAF  h=16.0
+          child returned 16.0 -> node value 16.0, alpha=16 beta=-17
+          PRUNE (alpha >= beta): the remaining 2 move(s) are never evaluated
+      child returned 16.0 -> node value -17.0, alpha=-inf beta=-17
+  child returned -17.0 -> node value -17.0, alpha=-17 beta=+inf
+    A3 dribbles (4,1)->(4,0): MIN node  alpha=-17 beta=+inf  (3 of 19 moves considered)
+        B1 moves (4,3)->(3,3): MAX node  alpha=-17 beta=+inf  (3 of 7 moves considered)
+            A3 dribbles (4,0)->(3,1): LEAF  h=-12.5
+          child returned -12.5 -> node value -12.5, alpha=-12.5 beta=+inf
+            A3 dribbles (4,0)->(4,1): LEAF  h=-12.0
+          child returned -12.0 -> node value -12.0, alpha=-12 beta=+inf
+            A3 dribbles (4,0)->(5,0): LEAF  h=76.5
+          child returned 76.5 -> node value 76.5, alpha=76.5 beta=+inf
+      child returned 76.5 -> node value 76.5, alpha=-17 beta=76.5
+        B1 moves (4,3)->(4,2): MAX node  alpha=-17 beta=76.5  (3 of 7 moves considered)
+            A3 dribbles (4,0)->(3,1): LEAF  h=-12.0
+          child returned -12.0 -> node value -12.0, alpha=-12 beta=76.5
+            A3 dribbles (4,0)->(4,1): LEAF  h=-11.5
+          child returned -11.5 -> node value -11.5, alpha=-11.5 beta=76.5
+            A3 dribbles (4,0)->(5,0): LEAF  h=77.0
+          child returned 77.0 -> node value 77.0, alpha=77 beta=76.5
+      child returned 77.0 -> node value 76.5, alpha=-17 beta=76.5
+        B1 moves (4,3)->(5,3): MAX node  alpha=-17 beta=76.5  (3 of 7 moves considered)
+            A3 dribbles (4,0)->(3,1): LEAF  h=-11.5
+          child returned -11.5 -> node value -11.5, alpha=-11.5 beta=76.5
+            A3 dribbles (4,0)->(4,1): LEAF  h=-11.0
+          child returned -11.0 -> node value -11.0, alpha=-11 beta=76.5
+            A3 dribbles (4,0)->(5,0): LEAF  h=77.5
+          child returned 77.5 -> node value 77.5, alpha=77.5 beta=76.5
+      child returned 77.5 -> node value 76.5, alpha=-17 beta=76.5
+  child returned 76.5 -> node value 76.5, alpha=76.5 beta=+inf
+    A3 dribbles (4,1)->(4,2): MIN node  alpha=76.5 beta=+inf  (3 of 6 moves considered)
+        B2 dribbles (3,2)->(2,1): MAX node  alpha=76.5 beta=+inf  (3 of 7 moves considered)
+            A1 dribbles (2,2)->(1,1): LEAF  h=-16.5
+          child returned -16.5 -> node value -16.5, alpha=76.5 beta=+inf
+            A1 dribbles (2,2)->(1,2): LEAF  h=-16.5
+          child returned -16.5 -> node value -16.5, alpha=76.5 beta=+inf
+            A1 dribbles (2,2)->(1,3): LEAF  h=-16.5
+          child returned -16.5 -> node value -16.5, alpha=76.5 beta=+inf
+      child returned -16.5 -> node value -16.5, alpha=76.5 beta=-16.5
+      PRUNE (alpha >= beta): the remaining 2 move(s) are never evaluated
+  child returned -16.5 -> node value 76.5, alpha=76.5 beta=+inf
+
+Value of the root for team A = 76.5

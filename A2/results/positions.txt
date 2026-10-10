@@ -1,0 +1,44 @@
+--- kickoff ---
+Turn 0/80 | A to move | Score A 0 - 0 B | ball: A3
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    B3   .    B4   .  
+  r2     .   A3*   .    A4   .  
+  r1     .    A1   .    A2   .  
+  r0     .    .    AG   .    .    <- A's goal line
+legal moves for the side to move: 8
+
+--- midfield duel ---
+Turn 20/80 | A to move | Score A 0 - 0 B | ball: A3
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    .    B3 
+  r3     B4   .    .    B2   A4 
+  r2     A2   .   A3*   .    .  
+  r1     .    .    A1   .    .  
+  r0     .    AG   .    .    .    <- A's goal line
+legal moves for the side to move: 8
+
+--- attack in the zone ---
+Turn 30/80 | A to move | Score A 0 - 0 B | ball: A3
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .   A3*   .    B1   B3 
+  r3     A4   .    B2   .    A2 
+  r2     .    .    A1   B4   .  
+  r1     .    .    .    .    .  
+  r0     .    .    .    AG   .    <- A's goal line
+legal moves for the side to move: 7
+
+--- defending a counter ---
+Turn 40/80 | A to move | Score A 0 - 0 B | ball: B3
+         c0   c1   c2   c3   c4 
+  r5     .    .    .    BG   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B4   .    .  
+  r2     B1   .    A3   .    B2 
+  r1     .    A1  B3*   A2   .  
+  r0     .    .    AG   .    A4   <- A's goal line
+legal moves for the side to move: 15
+

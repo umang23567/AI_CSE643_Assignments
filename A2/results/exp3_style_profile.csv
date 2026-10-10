@@ -1,0 +1,6 @@
+Agent,Games,Possession_%,passes/g,dribbles/g,shots/g,goals/g,shots_saved/g,tackled/g,defensive/g
+"AB(d=4,field)",240,60.2,17.3,7.94,0.74,0.44,0.3,3.01,14.02
+"AB(d=4,structure)",240,59.2,17.95,6.62,0.47,0.2,0.27,2.11,14.96
+Greedy(field),120,58.4,18.29,7.21,0.21,0.0,0.21,5.03,13.92
+Greedy(structure),120,42.0,12.42,4.85,0.87,0.0,0.87,1.92,21.7
+Random,120,10.8,1.92,3.74,0.05,0.0,0.05,2.57,34.29

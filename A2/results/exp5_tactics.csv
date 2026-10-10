@@ -1,0 +1,25 @@
+Probe,Agent,Found_%,ms/move,Nodes
+take a free goal (perfect search needs 1 ply),"AB(d=1,goals)",100.0,0.01,6
+take a free goal (perfect search needs 1 ply),"AB(d=2,goals)",100.0,0.04,28
+take a free goal (perfect search needs 1 ply),"AB(d=3,goals)",100.0,0.12,97
+take a free goal (perfect search needs 1 ply),"AB(d=1,field)",100.0,0.01,6
+take a free goal (perfect search needs 1 ply),MCTS(it=50),100.0,2.6,1050
+take a free goal (perfect search needs 1 ply),MCTS(it=200),100.0,10.02,4200
+take a free goal (perfect search needs 1 ply),MCTS(it=800),100.0,43.25,16800
+take a free goal (perfect search needs 1 ply),MCTS(it=3200),100.0,183.36,67200
+stop a shot: keeper must step to column 1 (needs 2 plies),"AB(d=1,goals)",0.0,0.01,16
+stop a shot: keeper must step to column 1 (needs 2 plies),"AB(d=2,goals)",100.0,0.1,114
+stop a shot: keeper must step to column 1 (needs 2 plies),"AB(d=3,goals)",100.0,0.52,555
+stop a shot: keeper must step to column 1 (needs 2 plies),"AB(d=1,field)",100.0,0.02,16
+stop a shot: keeper must step to column 1 (needs 2 plies),MCTS(it=50),0.0,2.48,1050
+stop a shot: keeper must step to column 1 (needs 2 plies),MCTS(it=200),80.0,9.99,4200
+stop a shot: keeper must step to column 1 (needs 2 plies),MCTS(it=800),100.0,45.32,16800
+stop a shot: keeper must step to column 1 (needs 2 plies),MCTS(it=3200),100.0,169.03,67200
+"pass to the wing, then shoot past the keeper (needs 3 plies)","AB(d=1,goals)",0.0,0.01,12
+"pass to the wing, then shoot past the keeper (needs 3 plies)","AB(d=2,goals)",0.0,0.04,31
+"pass to the wing, then shoot past the keeper (needs 3 plies)","AB(d=3,goals)",100.0,0.17,181
+"pass to the wing, then shoot past the keeper (needs 3 plies)","AB(d=1,field)",100.0,0.01,12
+"pass to the wing, then shoot past the keeper (needs 3 plies)",MCTS(it=50),25.0,2.25,1050
+"pass to the wing, then shoot past the keeper (needs 3 plies)",MCTS(it=200),30.0,9.12,4200
+"pass to the wing, then shoot past the keeper (needs 3 plies)",MCTS(it=800),100.0,40.08,16800
+"pass to the wing, then shoot past the keeper (needs 3 plies)",MCTS(it=3200),100.0,164.07,67200

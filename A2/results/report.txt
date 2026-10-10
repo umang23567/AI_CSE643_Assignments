@@ -1,0 +1,162 @@
+Robo-Football experiments | max turns 80 | games per pairing 60 (MCTS pairings 40) | quick=False
+
+====================================================================================================
+EXPERIMENT 1  -  alpha-beta pruning vs plain minimax (same depth, same heuristic)
+====================================================================================================
+
+Heuristic = field   (nodes = states visited; MM_nodes blank at depth 6: minimax not run)
+           Position  Depth  MM_nodes  AB_nodes  ABord_nodes  AB_saved_%  ABord_saved_%  MM_ms  AB_ms  ABord_ms  AB_speedup_x  Same_value
+            kickoff      2     146.0       107           42        26.7           71.2   0.15   0.11      0.07           1.4        True
+            kickoff      3    1413.0       712          244        49.6           82.7   1.49   0.83      0.39           1.8        True
+            kickoff      4   21183.0      4681         1577        77.9           92.6  21.72   5.38      2.16           4.0        True
+            kickoff      5  202217.0     19694         4792        90.3           97.6 216.96  23.39      7.52           9.3        True
+            kickoff      6       NaN    128374        29416         NaN            NaN    NaN 145.11     39.73           NaN        True
+      midfield duel      2     109.0        83           35        23.9           67.9   0.12   0.09      0.06           1.3        True
+      midfield duel      3     973.0       505          207        48.1           78.7   1.08   0.59      0.31           1.8        True
+      midfield duel      4   12785.0      3178         1045        75.1           91.8  13.19   3.66      1.48           3.6        True
+      midfield duel      5  108735.0     14607         6265        86.6           94.2 118.29  17.17      9.70           6.9        True
+      midfield duel      6       NaN     98430        31911         NaN            NaN    NaN 110.83     44.71           NaN        True
+ attack in the zone      2      84.0        57           63        32.1           25.0   0.09   0.07      0.08           1.3        True
+ attack in the zone      3     682.0       499          217        26.8           68.2   0.76   0.59      0.32           1.3        True
+ attack in the zone      4    6837.0      2829          965        58.6           85.9   7.44   3.43      1.45           2.2        True
+ attack in the zone      5   63505.0     15618         4077        75.4           93.6  69.36  18.74      6.57           3.7        True
+ attack in the zone      6       NaN     93275        22252         NaN            NaN    NaN 111.98     32.38           NaN        True
+defending a counter      2      99.0        46           39        53.5           60.6   0.12   0.06      0.06           2.0        True
+defending a counter      3     570.0       267          103        53.2           81.9   0.65   0.33      0.16           2.0        True
+defending a counter      4    7436.0      1388          261        81.3           96.5   7.72   1.60      0.51           4.8        True
+defending a counter      5   54252.0      4438          994        91.8           98.2  60.95   5.53      1.84          11.0        True
+defending a counter      6       NaN     23068         4688         NaN            NaN    NaN  27.74      7.24           NaN        True
+
+Heuristic = structure   (nodes = states visited; MM_nodes blank at depth 6: minimax not run)
+           Position  Depth  MM_nodes  AB_nodes  ABord_nodes  AB_saved_%  ABord_saved_%  MM_ms  AB_ms  ABord_ms  AB_speedup_x  Same_value
+            kickoff      2     146.0        81           93        44.5           36.3   0.47   0.25      0.31           1.9        True
+            kickoff      3    1413.0       541          364        61.7           74.2   4.52   1.69      1.20           2.7        True
+            kickoff      4   21183.0      6085         3709        71.3           82.5  67.86  19.56     13.07           3.5        True
+            kickoff      5  202217.0     18634        10060        90.8           95.0 645.51  57.20     33.04          11.3        True
+            kickoff      6       NaN    122979        82659         NaN            NaN    NaN 388.27    283.66           NaN        True
+      midfield duel      2     109.0        45           72        58.7           33.9   0.34   0.14      0.23           2.4        True
+      midfield duel      3     973.0       390          322        59.9           66.9   3.08   1.21      1.04           2.5        True
+      midfield duel      4   12785.0      2976         2803        76.7           78.1  40.03   9.12      9.35           4.4        True
+      midfield duel      5  108735.0     11214         5920        89.7           94.6 339.62  33.38     19.13          10.2        True
+      midfield duel      6       NaN     63560        31549         NaN            NaN    NaN 196.04    104.67           NaN        True
+ attack in the zone      2      84.0        73           55        13.1           34.5   0.26   0.22      0.18           1.2        True
+ attack in the zone      3     682.0       387          243        43.3           64.4   2.16   1.21      0.77           1.8        True
+ attack in the zone      4    6837.0      2782         1241        59.3           81.8  21.68   8.88      4.17           2.4        True
+ attack in the zone      5   63505.0     18298         4939        71.2           92.2 203.38  58.32     16.64           3.5        True
+ attack in the zone      6       NaN    111352        22527         NaN            NaN    NaN 351.61     74.02           NaN        True
+defending a counter      2      99.0        80           42        19.2           57.6   0.31   0.25      0.12           1.2        True
+defending a counter      3     570.0       403          115        29.3           79.8   1.82   1.27      0.35           1.4        True
+defending a counter      4    7436.0      1913          315        74.3           95.8  23.49   5.96      1.07           3.9        True
+defending a counter      5   54252.0      6478         1534        88.1           97.2 169.01  19.89      4.94           8.5        True
+defending a counter      6       NaN     28368        12444         NaN            NaN    NaN  88.23     42.18           NaN        True
+
+All three searches returned the SAME value on every position/depth: True
+Average nodes saved by alpha-beta over minimax: 85.5%  (with move ordering: 94.5%)
+
+====================================================================================================
+EXPERIMENT 2  -  Greedy (no look-ahead) vs Alpha-Beta   [60 games per pairing, sides alternated]
+====================================================================================================
+                X                 Y  Games  W  D  L  Score_% CI95_%  Goals_for/g  Goals_against/g  p_sign  X_ms/move  Y_ms/move
+    Greedy(field)            Random     60 33 27  0     77.5  65-86         0.75              0.0  0.0000       0.01       0.00
+Greedy(structure)            Random     60 22 38  0     68.3  56-79         0.40              0.0  0.0000       0.04       0.00
+    AB(d=2,field)     Greedy(field)     60  5 55  0     54.2  42-66         0.08              0.0  0.0625       0.09       0.01
+    AB(d=4,field)     Greedy(field)     60 34 26  0     78.3  66-87         0.68              0.0  0.0000       3.37       0.01
+AB(d=2,structure) Greedy(structure)     60  1 59  0     50.8  39-63         0.02              0.0  1.0000       0.25       0.05
+AB(d=4,structure) Greedy(structure)     60  0 60  0     50.0  38-62         0.00              0.0  1.0000       9.12       0.05
+
+====================================================================================================
+EXPERIMENT 3  -  heuristic vs heuristic (identical alpha-beta search)   [60 games per pairing]
+====================================================================================================
+
+Head to head (X = field, Y = structure):
+            X                 Y  Games  W  D  L  Score_% CI95_%  Goals_for/g  Goals_against/g  p_sign  X_ms/move  Y_ms/move
+AB(d=3,field) AB(d=3,structure)     60  0 58  2     48.3  36-61          0.0             0.03     0.5       0.44       1.90
+AB(d=4,field) AB(d=4,structure)     60  0 60  0     50.0  38-62          0.0             0.00     1.0       2.61       8.79
+
+Gauntlet - each heuristic with alpha-beta depth 4 against the same three opponents:
+                X                 Y  Games  W  D  L  Score_% CI95_%  Goals_for/g  Goals_against/g  p_sign  X_ms/move
+    AB(d=4,field)            Random     60 39 21  0     82.5  71-90         0.83              0.0  0.0000       2.50
+    AB(d=4,field)     Greedy(field)     60 41 19  0     84.2  73-91         0.83              0.0  0.0000       3.62
+    AB(d=4,field) Greedy(structure)     60  5 55  0     54.2  42-66         0.08              0.0  0.0625       2.72
+AB(d=4,structure)            Random     60 20 40  0     66.7  54-77         0.42              0.0  0.0000       7.91
+AB(d=4,structure)     Greedy(field)     60 22 38  0     68.3  56-79         0.37              0.0  0.0000       9.42
+AB(d=4,structure) Greedy(structure)     60  1 59  0     50.8  39-63         0.02              0.0  1.0000       8.68
+
+Playing style of the two heuristics (alpha-beta depth 4; averages per game over all their games):
+            Agent  Games  Possession_%  passes/g  dribbles/g  shots/g  goals/g  shots_saved/g  tackled/g  defensive/g
+    AB(d=4,field)    240          60.2     17.30        7.94     0.74     0.44           0.30       3.01        14.02
+AB(d=4,structure)    240          59.2     17.95        6.62     0.47     0.20           0.27       2.11        14.96
+
+====================================================================================================
+EXPERIMENT 4  -  depth vs strength and cost   [60 games per point, reference opponent = Greedy]
+====================================================================================================
+                X                 Y  Games  W  D  L  Score_% CI95_%  Goals_for/g  Goals_against/g  p_sign  X_ms/move  X_nodes/move
+    AB(d=1,field)     Greedy(field)     60 21 21 18     52.5  40-65         0.42             0.35  0.7493       0.02            12
+    AB(d=2,field)     Greedy(field)     60  3 57  0     52.5  40-65         0.05             0.00  0.2500       0.09            65
+    AB(d=3,field)     Greedy(field)     60 13 46  1     60.0  47-71         0.22             0.02  0.0018       0.60           507
+    AB(d=4,field)     Greedy(field)     60 44 16  0     86.7  76-93         0.80             0.00  0.0000       3.54          2934
+    AB(d=5,field)     Greedy(field)     60 44 16  0     86.7  76-93         0.83             0.00  0.0000      22.78         19548
+AB(d=1,structure) Greedy(structure)     60  0 60  0     50.0  38-62         0.00             0.00  1.0000       0.05            14
+AB(d=2,structure) Greedy(structure)     60  1 59  0     50.8  39-63         0.02             0.00  1.0000       0.23            75
+AB(d=3,structure) Greedy(structure)     60  3 57  0     52.5  40-65         0.05             0.00  0.2500       1.96           627
+AB(d=4,structure) Greedy(structure)     60  1 59  0     50.8  39-63         0.02             0.00  1.0000       9.15          2940
+
+Depth ladder (field heuristic): each depth against the previous depth   [60 games]
+            X             Y  Games  W  D  L  Score_% CI95_%  Goals_for/g  Goals_against/g  p_sign  X_ms/move  Y_ms/move
+AB(d=2,field) AB(d=1,field)     60  5 53  2     52.5  40-65         0.08             0.03  0.4531       0.08       0.01
+AB(d=3,field) AB(d=2,field)     60  3 56  1     51.7  39-64         0.05             0.02  0.6250       0.53       0.08
+AB(d=4,field) AB(d=3,field)     60 13 47  0     60.8  48-72         0.22             0.00  0.0002       2.84       0.49
+AB(d=5,field) AB(d=4,field)     60 10 50  0     58.3  46-70         0.18             0.00  0.0020      16.51       2.50
+
+====================================================================================================
+EXPERIMENT 5  -  MCTS cost-benefit   [40 games per pairing]
+====================================================================================================
+                        X             Y  Games  W  D  L  Score_% CI95_%  Goals_for/g  Goals_against/g  p_sign  X_ms/move  Y_ms/move  X_nodes/move
+        MCTS(it=50,rd=20) Greedy(field)     40  2 12 26     20.0  10-35         0.05             0.95  0.0000       2.01       0.01           885
+       MCTS(it=100,rd=20) Greedy(field)     40  1 10 29     15.0   7-29         0.02             1.15  0.0000       4.10       0.01          1798
+       MCTS(it=200,rd=20) Greedy(field)     40  1 17 22     23.8  13-39         0.02             0.90  0.0000       8.29       0.01          3570
+       MCTS(it=400,rd=20) Greedy(field)     40  1 22 17     30.0  18-45         0.02             0.68  0.0001      16.57       0.01          6911
+       MCTS(it=800,rd=20) Greedy(field)     40  4 26 10     42.5  29-58         0.10             0.32  0.1796      35.36       0.01         14103
+       MCTS(it=100,rd=20)        Random     40 34  6  0     92.5  80-97         0.95             0.00  0.0000       4.11       0.00          1790
+       MCTS(it=400,rd=20)        Random     40 40  0  0    100.0 91-100         1.23             0.00  0.0000      17.11       0.00          7099
+       MCTS(it=100,rd=20) AB(d=3,field)     40  0 13 27     16.2   8-31         0.00             0.72  0.0000       4.09       0.47          1788
+       MCTS(it=400,rd=20) AB(d=3,field)     40  0 24 16     30.0  18-45         0.00             0.57  0.0000      16.67       0.44          6868
+       MCTS(it=800,rd=20) AB(d=3,field)     40  0 29 11     36.2  23-52         0.00             0.32  0.0010      34.60       0.41         13813
+        MCTS(it=400,rd=6) Greedy(field)     40  1 27 12     36.2  23-52         0.02             0.32  0.0034       7.80       0.01          2602
+       MCTS(it=400,rd=40) Greedy(field)     40  2 25 13     36.2  23-52         0.08             0.48  0.0074      26.62       0.01         11695
+ MCTS(it=25,rd=10,guided) Greedy(field)     40  1 12 27     17.5   9-32         0.02             0.90  0.0000       2.45       0.01          2237
+MCTS(it=100,rd=10,guided) Greedy(field)     40  8 21 11     46.2  32-61         0.22             0.35  0.6476       9.87       0.01          8862
+MCTS(it=400,rd=10,guided) Greedy(field)     40 10 27  3     58.8  43-73         0.25             0.10  0.0923      38.86       0.01         34151
+ MCTS(it=25,rd=10,guided) AB(d=3,field)     40  0 21 19     26.2  15-42         0.00             0.70  0.0000       2.44       0.46          2227
+MCTS(it=100,rd=10,guided) AB(d=3,field)     40  3 21 16     33.8  21-49         0.08             0.48  0.0044      10.05       0.47          8857
+MCTS(it=400,rd=10,guided) AB(d=3,field)     40  1 31  8     41.2  27-57         0.02             0.22  0.0391      38.37       0.44         33482
+
+Tactics probe: how often is the forced best move found?  Alpha-beta is deterministic.  'goals' = evaluation that only counts goals (shows the depth really needed);
+'field' = the field heuristic (already rewards shot threats, so it needs less depth).  MCTS is run with 20 seeds.
+                                                       Probe         Agent  Found_%  ms/move  Nodes
+               take a free goal (perfect search needs 1 ply) AB(d=1,goals)    100.0     0.01      6
+               take a free goal (perfect search needs 1 ply) AB(d=2,goals)    100.0     0.04     28
+               take a free goal (perfect search needs 1 ply) AB(d=3,goals)    100.0     0.12     97
+               take a free goal (perfect search needs 1 ply) AB(d=1,field)    100.0     0.01      6
+               take a free goal (perfect search needs 1 ply)   MCTS(it=50)    100.0     2.60   1050
+               take a free goal (perfect search needs 1 ply)  MCTS(it=200)    100.0    10.02   4200
+               take a free goal (perfect search needs 1 ply)  MCTS(it=800)    100.0    43.25  16800
+               take a free goal (perfect search needs 1 ply) MCTS(it=3200)    100.0   183.36  67200
+   stop a shot: keeper must step to column 1 (needs 2 plies) AB(d=1,goals)      0.0     0.01     16
+   stop a shot: keeper must step to column 1 (needs 2 plies) AB(d=2,goals)    100.0     0.10    114
+   stop a shot: keeper must step to column 1 (needs 2 plies) AB(d=3,goals)    100.0     0.52    555
+   stop a shot: keeper must step to column 1 (needs 2 plies) AB(d=1,field)    100.0     0.02     16
+   stop a shot: keeper must step to column 1 (needs 2 plies)   MCTS(it=50)      0.0     2.48   1050
+   stop a shot: keeper must step to column 1 (needs 2 plies)  MCTS(it=200)     80.0     9.99   4200
+   stop a shot: keeper must step to column 1 (needs 2 plies)  MCTS(it=800)    100.0    45.32  16800
+   stop a shot: keeper must step to column 1 (needs 2 plies) MCTS(it=3200)    100.0   169.03  67200
+pass to the wing, then shoot past the keeper (needs 3 plies) AB(d=1,goals)      0.0     0.01     12
+pass to the wing, then shoot past the keeper (needs 3 plies) AB(d=2,goals)      0.0     0.04     31
+pass to the wing, then shoot past the keeper (needs 3 plies) AB(d=3,goals)    100.0     0.17    181
+pass to the wing, then shoot past the keeper (needs 3 plies) AB(d=1,field)    100.0     0.01     12
+pass to the wing, then shoot past the keeper (needs 3 plies)   MCTS(it=50)     25.0     2.25   1050
+pass to the wing, then shoot past the keeper (needs 3 plies)  MCTS(it=200)     30.0     9.12   4200
+pass to the wing, then shoot past the keeper (needs 3 plies)  MCTS(it=800)    100.0    40.08  16800
+pass to the wing, then shoot past the keeper (needs 3 plies) MCTS(it=3200)    100.0   164.07  67200
+
+Total time: 12.2 min   ->   results in /Users/umangaggarwal/Library/Mobile Documents/com~apple~CloudDocs/Sem 7/AI/Assignments.nosync/A2/results

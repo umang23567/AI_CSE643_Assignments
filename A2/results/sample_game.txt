@@ -1,0 +1,723 @@
+Sample game: A = AB(d=4,field)   B = AB(d=4,structure)   final score 0-0
+(the first 4 plies are random openings)
+
+A A3 dribbles (2,1)->(2,0)  (tackled)
+Turn 1/80 | B to move | Score A 0 - 0 B | ball: B3
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .   B3*   .    B4   .  
+  r2     A3   .    .    A4   .  
+  r1     .    A1   .    A2   .  
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 dribbles (3,1)->(3,2)  (tackled)
+Turn 2/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    B3   B4   .  
+  r2     A3   .    .   A4*   .  
+  r1     .    A1   .    A2   .  
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 dribbles (2,3)->(2,4)  (tackled)
+Turn 3/80 | B to move | Score A 0 - 0 B | ball: B4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    B3  B4*   .  
+  r2     A3   .    .    .    A4 
+  r1     .    A1   .    A2   .  
+  r0     .    .    AG   .    .    <- A's goal line
+B B4 dribbles (3,3)->(2,2)  (tackled)
+Turn 4/80 | A to move | Score A 0 - 0 B | ball: A1
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    B3   .    .  
+  r2     A3   .    B4   .    A4 
+  r1     .   A1*   .    A2   .  
+  r0     .    .    AG   .    .    <- A's goal line
+A A1 passes to A2
+Turn 5/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    B3   .    .  
+  r2     A3   .    B4   .    A4 
+  r1     .    A1   .   A2*   .  
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (3,2)->(2,1)
+Turn 6/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    .    .    .  
+  r2     A3   B3   B4   .    A4 
+  r1     .    A1   .   A2*   .  
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 dribbles (1,3)->(1,4)
+Turn 7/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    .    .    .  
+  r2     A3   B3   B4   .    A4 
+  r1     .    A1   .    .   A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B4 moves (2,2)->(1,3)
+Turn 8/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    .    .    .  
+  r2     A3   B3   .    .    A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 9/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    B1   .    B2   .  
+  r3     .    .    .    .    .  
+  r2     A3   B3   .    .   A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (4,1)->(3,1)
+Turn 10/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   B3   .    .   A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 11/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   B3   .    .    A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (2,1)->(1,2)
+Turn 12/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    .    A4 
+  r1     .    A1   B3   B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 13/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    .   A4* 
+  r1     .    A1   B3   B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (1,2)->(2,3)
+Turn 14/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 15/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (2,3)->(1,2)
+Turn 16/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    .    A4 
+  r1     .    A1   B3   B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 17/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    .   A4* 
+  r1     .    A1   B3   B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (1,2)->(2,3)
+Turn 18/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 19/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B BG moves (5,2)->(5,1)
+Turn 20/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 21/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (3,1)->(3,2)
+Turn 22/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    .    B1   .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 23/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    .    B1   .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (3,2)->(3,1)
+Turn 24/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 25/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     .    B1   .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (3,1)->(3,0)
+Turn 26/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     B1   .    .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 27/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    B2   .  
+  r3     B1   .    .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (4,3)->(5,3)
+Turn 28/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B1   .    .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 29/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B1   .    .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (5,3)->(4,4)
+Turn 30/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     B1   .    .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 31/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     B1   .    .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (3,0)->(2,1)
+Turn 32/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    .    .    .  
+  r2     A3   B1   .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 33/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    .    .    .  
+  r2     A3   B1   .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (2,1)->(3,2)
+Turn 34/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    B1   .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 35/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    B1   .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (4,4)->(3,3)
+Turn 36/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B1   B2   .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 37/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B1   B2   .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (3,2)->(2,2)
+Turn 38/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B2   .  
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 39/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B2   .  
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B BG moves (5,1)->(5,0)
+Turn 40/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B2   .  
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 41/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B2   .  
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (3,3)->(3,4)
+Turn 42/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    B2 
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 43/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    B2 
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (2,3)->(1,2)
+Turn 44/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    B2 
+  r2     A3   .    B1   .    A4 
+  r1     .    A1   B3   B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 45/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    B2 
+  r2     A3   .    B1   .   A4* 
+  r1     .    A1   B3   B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (1,2)->(2,3)
+Turn 46/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    B2 
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 47/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    B2 
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (3,4)->(4,4)
+Turn 48/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 49/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     BG   .    .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B BG moves (5,0)->(5,1)
+Turn 50/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 51/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    B2 
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (4,4)->(5,3)
+Turn 52/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 53/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    BG   .    B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B BG moves (5,1)->(5,2)
+Turn 54/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 55/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (2,2)->(1,2)
+Turn 56/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   B1   B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 57/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   B1   B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (1,2)->(2,2)
+Turn 58/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 59/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    .    .  
+  r2     A3   .    B1   B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (2,2)->(3,2)
+Turn 60/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B1   .    .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 61/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B1   .    .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (3,2)->(3,3)
+Turn 62/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B1   .  
+  r2     A3   .    .    B3  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 63/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B1   .  
+  r2     A3   .    .    B3   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (2,3)->(3,2)
+Turn 64/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B3   B1   .  
+  r2     A3   .    .    .    A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 65/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B3   B1   .  
+  r2     A3   .    .    .   A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B1 moves (3,3)->(2,3)
+Turn 66/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B3   .    .  
+  r2     A3   .    .    B1  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 67/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    B3   .    .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B3 moves (3,2)->(3,3)
+Turn 68/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B3   .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 69/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   B2   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    .    .    B3   .  
+  r2     A3   .    .    B1  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (5,3)->(4,2)
+Turn 70/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    B2   .    .  
+  r3     .    .    .    B3   .  
+  r2     A3   .    .    B1  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 71/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    B2   .    .  
+  r3     .    .    .    B3   .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (4,2)->(3,1)
+Turn 72/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    B2   .    B3   .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 passes to A4
+Turn 73/80 | B to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     .    B2   .    B3   .  
+  r2     A3   .    .    B1  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+B B2 moves (3,1)->(3,0)
+Turn 74/80 | A to move | Score A 0 - 0 B | ball: A4
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B2   .    .    B3   .  
+  r2     A3   .    .    B1  A4* 
+  r1     .    A1   .    B4   A2 
+  r0     .    .    AG   .    .    <- A's goal line
+A A4 passes to A2
+Turn 75/80 | B to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    BG   .    .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B2   .    .    B3   .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+B BG moves (5,2)->(5,3)
+Turn 76/80 | A to move | Score A 0 - 0 B | ball: A2
+         c0   c1   c2   c3   c4 
+  r5     .    .    .    BG   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B2   .    .    B3   .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .    B4  A2* 
+  r0     .    .    AG   .    .    <- A's goal line
+A A2 dribbles (1,4)->(0,4)  (tackled)
+Turn 77/80 | B to move | Score A 0 - 0 B | ball: B4
+         c0   c1   c2   c3   c4 
+  r5     .    .    .    BG   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B2   .    .    B3   .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .   B4*   .  
+  r0     .    .    AG   .    A2   <- A's goal line
+B B4 passes to B3
+Turn 78/80 | A to move | Score A 0 - 0 B | ball: B3
+         c0   c1   c2   c3   c4 
+  r5     .    .    .    BG   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B2   .    .   B3*   .  
+  r2     A3   .    .    B1   A4 
+  r1     .    A1   .    B4   .  
+  r0     .    .    AG   .    A2   <- A's goal line
+A A4 moves (2,4)->(1,4)
+Turn 79/80 | B to move | Score A 0 - 0 B | ball: B3
+         c0   c1   c2   c3   c4 
+  r5     .    .    .    BG   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B2   .    .   B3*   .  
+  r2     A3   .    .    B1   .  
+  r1     .    A1   .    B4   A4 
+  r0     .    .    AG   .    A2   <- A's goal line
+B B3 passes to B4
+Turn 80/80 | A to move | Score A 0 - 0 B | ball: B4
+         c0   c1   c2   c3   c4 
+  r5     .    .    .    BG   .    <- B's goal line (A attacks up)
+  r4     .    .    .    .    .  
+  r3     B2   .    .    B3   .  
+  r2     A3   .    .    B1   .  
+  r1     .    A1   .   B4*   A4 
+  r0     .    .    AG   .    A2   <- A's goal line
