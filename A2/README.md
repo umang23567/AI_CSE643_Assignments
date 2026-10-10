@@ -9,7 +9,7 @@ python main.py test                 # 36 automated rule/agent checks (~1 s)
 python main.py demo                 # watch a game, boards printed
 python main.py trace                # alpha-beta trace you can follow by hand -> results/alphabeta_trace.txt
 python main.py experiments --quick  # whole pipeline, small sample (~3 min)
-python main.py experiments          # full run (~17 min on one core)
+python main.py experiments          # full run (~12 min on one core)
 python main.py replot               # redraw figures from the saved CSVs
 ```
 
@@ -82,11 +82,11 @@ Nodes visited, 4 positions. All three searches returned the **same value in ever
 
 | position | depth | minimax | alpha-beta | AB + ordering | saved | time (MM -> AB) |
 |---|---|---|---|---|---|---|
-| kickoff | 3 | 1,413 | 712 | 244 | 49.6% | 2.3 -> 1.3 ms |
-| kickoff | 5 | 202,217 | 19,694 | 4,792 | 90.3% | 259 -> 34 ms |
-| midfield duel | 5 | 108,735 | 14,607 | 6,265 | 86.6% | 160 -> 25 ms |
-| attack in the zone | 5 | 63,505 | 15,618 | 4,077 | 75.4% | 128 -> 35 ms |
-| defending a counter | 5 | 54,252 | 4,438 | 994 | 91.8% | 118 -> 11 ms |
+| kickoff | 3 | 1,413 | 712 | 244 | 49.6% | 1.49 -> 0.83 ms |
+| kickoff | 5 | 202,217 | 19,694 | 4,792 | 90.3% | 216.96 -> 23.39 ms |
+| midfield duel | 5 | 108,735 | 14,607 | 6,265 | 86.6% | 118.29 -> 17.17 ms |
+| attack in the zone | 5 | 63,505 | 15,618 | 4,077 | 75.4% | 69.36 -> 18.74 ms |
+| defending a counter | 5 | 54,252 | 4,438 | 994 | 91.8% | 60.95 -> 5.53 ms |
 
 Across depths 2-5 alpha-beta saves **85.5%** of nodes (94.5% with ordering). The saving *grows with depth*:
 13-59% at depth 2, 27-62% at depth 3, 59-81% at depth 4, 71-92% at depth 5. Minimax grows about x10-15 per ply
@@ -127,12 +127,12 @@ per move (more features per evaluation).
 | depth | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|
 | FIELD score % | 52.5 | 52.5 | 60.0 | 86.7 | 86.7 |
-| ms / move | 0.02 | 0.11 | 0.73 | 4.2 | 29 |
+| ms / move | 0.02 | 0.09 | 0.60 | 3.54 | 22.78 |
 | nodes / move | 12 | 65 | 507 | 2,934 | 19,548 |
 
-Nodes and time grow about x5-8 per ply. Against Greedy, depth 3 is modestly better (13-46-1, p=.002), strength jumps at depth 4, and
+Nodes and time grow about x5-8 per ply. Against Greedy, depth 3 is modestly better (13-46-1, p=.0018), strength jumps at depth 4, and
 the curve is then flat. Head-to-head the
-extra depth still matters: d4 beats d3 13-0 (p=.0002), d5 beats d4 10-0 (p=.002), while d2 vs d1 and d3 vs d2
+extra depth still matters: d4 beats d3 13-47-0 (p=.0002), d5 beats d4 10-50-0 (p=.002), while d2 vs d1 and d3 vs d2
 are not significant. STRUCTURE never beats Greedy(structure) at any depth (50-52.5%): its fortress is the limit,
 not the depth.
 
@@ -141,25 +141,25 @@ not the depth.
 |---|---|---|---|---|---|---|
 | random roll-outs, depth 20 | - | 20.0 | 15.0 | 23.8 | 30.0 | 42.5 |
 | guided roll-outs, depth 10 | 17.5 | - | 46.2 | - | 58.8 | - |
-| time / move (random) | - | 3 ms | 6.5 | 13 | 26 | 57 |
+| time / move (random) | - | 2.01 ms | 4.10 | 8.29 | 16.57 | 35.36 |
 
-MCTS's best result (58.8% at 52 ms/move) is far below depth-4 alpha-beta's 86.7% at 4.2 ms/move; against
+MCTS's best result (58.8% at 38.86 ms/move) is far below depth-4 alpha-beta's 86.7% at 3.54 ms/move; against
 depth-3 alpha-beta, MCTS(800 iterations) scores 36.2% (0-29-11) and guided MCTS(400) 41.2%. Roll-out depth 6 vs 40 (400 its) made no difference (36.2% both), so **roll-out quality, not length,
 is the bottleneck**: heuristic-guided roll-outs at 400 iterations scored higher than random roll-outs at 800
 (58.8% vs 42.5%) for about the same time per move, although the two intervals (43-73 vs 29-58) overlap. **Tactics probe** (20 seeds): finding "step the keeper over to stop a shot" takes MCTS 200 iterations
 (80%) / 800 (100%); "pass to the wing, then shoot" needs 800 (100%; 30% at 200). Alpha-beta with a goals-only
 evaluation needs exactly 1, 2, 3 plies for the three probes (6, 114 and 181 nodes, 0.03-0.2 ms; MCTS(800)
-uses 16,800 nodes, 64-74 ms), and with the FIELD heuristic depth 1 finds all three: **a good heuristic substitutes for depth**. MCTS is the right tool when no
+uses 16,800 nodes, 40-45 ms), and with the FIELD heuristic depth 1 finds all three: **a good heuristic substitutes for depth**. MCTS is the right tool when no
 useful heuristic or branching is huge; here branching is small (<=~30) and the heuristic is cheap, so
 alpha-beta wins on cost-benefit.
 
-## 4. Limitations (be upfront about these)
+## 4. Limitations
 * Equal-strength agents mostly draw, so many pairings have few decisive games; read score% with its interval.
 * Heuristics and formation were tuned once (separate seeds); weights are hand-set, not optimised.
 * MCTS parameters (c = 1, eps = 0.3, tanh scale 60) were not tuned; a stronger MCTS may exist.
 * Match length (80) is a design choice; 60 and 100 were only checked informally.
 
-## 5. Hand-tracing alpha-beta (viva)
+## 5. Hand-tracing alpha-beta
 `python main.py trace` prints, for a real position, every node with its alpha/beta, leaf values and the cut-off
 line "PRUNE (alpha >= beta)". Procedure: MAX nodes raise alpha to the best child so far, MIN nodes lower beta;
 the moment alpha >= beta the remaining siblings cannot change the root value and are skipped. The trace keeps
