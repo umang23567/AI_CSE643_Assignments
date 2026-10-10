@@ -1,4 +1,4 @@
-# Robo-Football (Assignment 2): game, players, experiments
+# Robo-Football (CSE643 Assignment 2): game, players, experiments
 
 Two-player, turn-based football on a 6x5 grid. Part 1 = the game, Part 2 = agents (Random, Greedy,
 Minimax, Alpha-Beta, MCTS), Part 3 = experiments. Needs Python 3 with pandas and matplotlib.
