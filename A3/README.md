@@ -1,4 +1,4 @@
-# ARC-AGI-1: a classical-AI attempt (DSL + program search)
+# ARC-AGI-1  (CSE643 Assignment 3): a classical-AI attempt (DSL + program search)
 
 No machine learning. A hand-written DSL of ~100 grid primitives, and state-space search for a program
 that maps every demonstration input to its output. Same toolbox as assignments 1 and 2 (BFS, greedy, A*).
