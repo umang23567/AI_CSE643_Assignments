@@ -1,0 +1,401 @@
+task,verdict,program_len,expanded,seconds,program
+007bbfb7,no program found (exhausted),,3762,0.61,
+00d62c1b,SOLVED,1,35,0.21,fill_holes(4)
+017c7c7b,no program found (exhausted),,1457,0.48,
+025d127b,no program found (exhausted),,3373,3.01,
+045e512c,no program found (timeout),,2964,8.0,
+0520fde7,SOLVED,1,43,0.07,lr_and  + colour map {1: 2}
+05269061,no program found (exhausted),,5321,2.76,
+05f2a901,no program found (exhausted),,2017,1.64,
+06df4c85,no program found (timeout),,1133,8.0,
+08ed6ac7,no program found (exhausted),,2396,3.84,
+09629e4f,no program found (timeout),,2612,8.0,
+0962bcdd,no program found (exhausted),,4543,4.19,
+0a938d79,no program found (exhausted),,2702,2.67,
+0b148d64,"overfit: fits demos, wrong on test",2,144,0.82,remove_color(1) -> crop_largest
+0ca9ddb6,no program found (exhausted),,4729,4.2,
+0d3d703e,SOLVED,0,99,0.2,"(identity)  + colour map {3: 4, 1: 5, 2: 6, 8: 9, 5: 1, 6: 2, 9: 8, 4: 3}"
+0dfd9992,no program found (timeout),,584,8.0,
+0e206a2e,no program found (timeout),,4667,8.0,
+10fcaaa3,no program found (exhausted),,4218,0.65,
+11852cab,no program found (exhausted),,6372,6.93,
+1190e5a7,no program found (exhausted),,1140,1.13,
+137eaa0f,no program found (timeout),,5856,8.0,
+150deff5,no program found (exhausted),,1960,1.51,
+178fcbfb,no program found (exhausted),,2701,1.64,
+1a07d186,no program found (timeout),,4110,8.0,
+1b2d62fb,SOLVED,1,47,0.15,"lr_or  + colour map {1: 0, 0: 8}"
+1b60fb0c,no program found (exhausted),,2037,1.94,
+1bfc4729,no program found (exhausted),,3743,2.54,
+1c786137,no program found (timeout),,933,8.0,
+1caeab9d,no program found (exhausted),,3008,2.02,
+1cf80156,SOLVED,1,21,0.1,crop_bbox
+1e0a9b12,SOLVED,1,29,0.13,gravity_down
+1e32b0e9,no program found (exhausted),,4589,6.26,
+1f0c79e5,no program found (exhausted),,4167,2.75,
+1f642eb9,no program found (timeout),,4350,8.0,
+1f85a75f,"overfit: fits demos, wrong on test",1,14,0.14,crop_largest
+1f876c06,no program found (timeout),,7053,8.01,
+1fad071e,no program found (exhausted),,2378,1.67,
+2013d3e2,SOLVED,3,4346,5.15,crop_bbox -> left_half -> top_half
+2204b7a8,no program found (timeout),,6312,8.0,
+22168020,SOLVED,1,29,0.19,connect_h
+22233c11,no program found (exhausted),,1601,1.34,
+2281f1f4,no program found (exhausted),,2063,1.48,
+228f6490,no program found (timeout),,2091,8.0,
+22eb0ac0,SOLVED,1,20,0.21,connect_h
+234bbc79,no program found (exhausted),,6152,2.82,
+23581191,no program found (exhausted),,1805,1.47,
+239be575,no program found (exhausted),,2624,1.2,
+23b5c85d,"overfit: fits demos, wrong on test",3,5664,3.29,remove_color(2) -> remove_color(3) -> crop_smallest
+253bf280,no program found (exhausted),,1678,0.74,
+25d487eb,no program found (exhausted),,3313,2.32,
+25d8a9c8,"overfit: fits demos, wrong on test",2,495,0.28,"roll_right -> recolor_smallest(5)  + colour map {4: 5, 2: 0, 3: 0, 5: 0, 7: 0, 6: 5, 9: 5, 1: 5}"
+25ff71a9,SOLVED,1,939,0.2,roll_down
+264363fd,no program found (timeout),,385,8.01,
+272f95fa,no program found (exhausted),,1959,6.63,
+27a28665,no program found (exhausted),,4014,0.92,
+28bf18c6,SOLVED,2,418,0.32,crop_bbox -> tile_h2
+28e73c20,no program found (exhausted),,56,0.04,
+29623171,no program found (exhausted),,4746,6.0,
+29c11459,no program found (exhausted),,4713,1.85,
+29ec7d0e,no program found (timeout),,552,8.01,
+2bcee788,no program found (exhausted),,4874,4.75,
+2bee17df,no program found (exhausted),,2883,3.55,
+2c608aff,no program found (exhausted),,3420,3.89,
+2dc579da,no program found (exhausted),,3760,1.12,
+2dd70a9a,no program found (exhausted),,2718,7.14,
+2dee498d,no program found (exhausted),,5037,1.62,
+31aa019c,no program found (timeout),,6611,8.0,
+321b1fc6,no program found (exhausted),,5946,6.74,
+32597951,no program found (exhausted),,2722,4.65,
+3345333e,no program found (exhausted),,2739,2.28,
+3428a4f5,SOLVED,1,56,0.21,ud_xor  + colour map {1: 3}
+3618c87e,no program found (exhausted),,1526,0.65,
+3631a71a,no program found (timeout),,115,8.05,
+363442ee,no program found (timeout),,3709,8.0,
+36d67576,no program found (exhausted),,5223,7.76,
+36fdfd69,no program found (timeout),,2890,8.0,
+3906de3d,SOLVED,1,47,0.2,gravity_up
+39a8645d,"overfit: fits demos, wrong on test",1,24,0.15,crop_smallest
+39e1d7f9,no program found (timeout),,1070,8.0,
+3aa6fb7a,no program found (exhausted),,2008,1.0,
+3ac3eb23,no program found (exhausted),,2431,0.99,
+3af2c5a8,SOLVED,1,19,0.03,mirror4
+3bd67248,no program found (exhausted),,1490,2.03,
+3bdb4ada,no program found (exhausted),,3330,4.7,
+3befdf3e,no program found (exhausted),,7071,4.74,
+3c9b0459,SOLVED,1,3,0.01,rot180
+3de23699,no program found (exhausted),,3903,1.42,
+3e980e27,no program found (exhausted),,5680,6.07,
+3eda0437,no program found (exhausted),,2548,2.07,
+3f7978a0,no program found (exhausted),,2733,1.77,
+40853293,SOLVED,1,20,0.21,connect_hv
+4093f84a,no program found (exhausted),,2966,2.46,
+41e4d17e,no program found (exhausted),,902,3.27,
+4258a5f9,no program found (exhausted),,1803,1.13,
+4290ef0e,no program found (timeout),,3254,8.0,
+42a50994,SOLVED,1,17,0.12,remove_singletons
+4347f46a,no program found (timeout),,2816,8.0,
+444801d8,no program found (exhausted),,7271,5.97,
+445eab21,no program found (exhausted),,5299,3.62,
+447fd412,no program found (exhausted),,1964,1.38,
+44d8ac46,no program found (exhausted),,2432,2.76,
+44f52bb0,SOLVED,2,1634,0.3,"left_half -> ud_xor  + colour map {0: 1, 1: 7}"
+4522001f,no program found (exhausted),,969,0.25,
+4612dd53,no program found (exhausted),,2155,1.91,
+46442a0e,no program found (exhausted),,3201,0.5,
+469497ad,no program found (exhausted),,9916,4.49,
+46f33fce,no program found (exhausted),,5227,5.36,
+47c1f68c,"overfit: fits demos, wrong on test",3,3600,2.4,"left_half -> top_half -> mirror4  + colour map {1: 2, 3: 8, 2: 4}"
+484b58aa,no program found (timeout),,120,8.01,
+48d8fb45,SOLVED,3,3575,3.18,crop_largest -> remove_singletons -> crop_bbox
+4938f0c2,no program found (exhausted),,1924,1.99,
+496994bd,SOLVED,1,14,0.05,sym_ud
+49d1d64f,no program found (exhausted),,3563,0.71,
+4be741c5,no program found (exhausted),,4319,5.99,
+4c4377d9,SOLVED,1,202,0.2,mirror_v_rev
+4c5c2cf0,no program found (exhausted),,5780,7.12,
+50846271,no program found (timeout),,2401,8.0,
+508bd3b6,no program found (exhausted),,2277,2.36,
+50cb2852,no program found (exhausted),,3967,6.58,
+5117e062,no program found (exhausted),,5035,5.12,
+5168d44c,no program found (exhausted),,1977,0.72,
+539a4f51,no program found (exhausted),,4494,2.21,
+53b68214,no program found (exhausted),,3325,1.61,
+543a7ed5,no program found (exhausted),,1228,5.49,
+54d82841,no program found (exhausted),,3540,2.0,
+54d9e175,no program found (exhausted),,4631,2.14,
+5521c0d9,no program found (exhausted),,2386,3.9,
+5582e5ca,"overfit: fits demos, wrong on test",3,1735,1.32,"left_half -> bottom_half -> up3  + colour map {6: 4, 8: 6}"
+5614dbcf,no program found (timeout),,4084,8.0,
+56dc2b01,no program found (exhausted),,2048,0.87,
+56ff96f3,no program found (exhausted),,5235,4.02,
+57aa92db,no program found (exhausted),,5952,7.93,
+5ad4f10b,no program found (exhausted),,3983,7.77,
+5bd6f4ac,no program found (timeout),,1835,8.0,
+5c0a986e,no program found (exhausted),,1839,2.58,
+5c2c9af4,no program found (exhausted),,1876,4.19,
+5daaa586,no program found (timeout),,1013,8.0,
+60b61512,no program found (exhausted),,2020,2.89,
+6150a2bd,SOLVED,1,3,0.01,rot180
+623ea044,no program found (exhausted),,1433,1.65,
+62c24649,SOLVED,1,56,0.2,mirror4
+63613498,no program found (timeout),,1610,8.0,
+6430c8c4,SOLVED,1,26,0.2,"ud_or  + colour map {1: 0, 0: 3}"
+6455b5f5,no program found (exhausted),,1630,2.76,
+662c240a,no program found (exhausted),,5648,3.57,
+67385a82,no program found (exhausted),,2327,0.49,
+673ef223,no program found (exhausted),,1901,1.67,
+6773b310,no program found (exhausted),,2078,2.08,
+67a3c6ac,SOLVED,1,56,0.2,fliplr
+67a423a3,no program found (exhausted),,7949,2.93,
+67e8384a,SOLVED,1,21,0.1,mirror4
+681b3aeb,no program found (exhausted),,6395,4.17,
+6855a6e4,no program found (exhausted),,2493,2.74,
+68b16354,SOLVED,1,20,0.2,flipud
+694f12f3,no program found (exhausted),,2330,3.22,
+6a1e5592,no program found (exhausted),,2207,2.78,
+6aa20dc0,no program found (timeout),,1711,8.0,
+6b9890af,no program found (exhausted),,3557,4.43,
+6c434453,no program found (exhausted),,2411,2.55,
+6cdd2623,no program found (exhausted),,4389,5.11,
+6cf79266,no program found (exhausted),,3691,7.97,
+6d0160f0,no program found (timeout),,1512,8.01,
+6d0aefbc,SOLVED,1,325,0.2,mirror_h
+6d58a25d,no program found (timeout),,3948,8.0,
+6d75e8bb,no program found (exhausted),,1848,1.49,
+6e02f1e3,no program found (exhausted),,930,0.26,
+6e19193c,no program found (exhausted),,2390,1.48,
+6e82a1ae,no program found (exhausted),,2997,3.52,
+6ecd11f4,no program found (timeout),,771,8.0,
+6f8cd79b,SOLVED,1,115,0.04,border(8)
+6fa7a44f,SOLVED,1,81,0.2,mirror_v
+72322fa7,no program found (timeout),,4162,8.0,
+72ca375d,SOLVED,3,5235,3.78,remove_color(2) -> remove_color(8) -> crop_largest
+73251a56,no program found (timeout),,473,8.0,
+7447852a,no program found (exhausted),,858,0.33,
+7468f01a,SOLVED,2,48,0.27,fliplr -> crop_bbox
+746b3537,SOLVED,2,751,0.37,dedup_rows -> dedup_cols
+74dd1130,SOLVED,1,7,0.02,transpose
+75b8110e,no program found (exhausted),,5540,5.64,
+760b3cac,no program found (exhausted),,2265,1.31,
+776ffc46,no program found (timeout),,3692,8.0,
+77fdfe62,no program found (timeout),,3518,8.0,
+780d0b14,no program found (timeout),,1043,8.0,
+7837ac64,no program found (timeout),,732,8.0,
+794b24be,no program found (exhausted),,1790,0.31,
+7b6016b9,SOLVED,1,11,0.22,fill_holes(2)  + colour map {0: 3}
+7b7f7511,no program found (exhausted),,4924,3.04,
+7c008303,no program found (timeout),,4294,8.0,
+7ddcd7ec,no program found (exhausted),,2752,1.84,
+7df24a62,no program found (exhausted),,1980,3.57,
+7e0986d6,no program found (exhausted),,3432,3.32,
+7f4411dc,no program found (exhausted),,3064,2.47,
+7fe24cdd,no program found (exhausted),,4674,1.69,
+80af3007,no program found (exhausted),,1012,0.9,
+810b9b61,no program found (exhausted),,2353,4.82,
+82819916,no program found (timeout),,4963,8.0,
+83302e8f,no program found (timeout),,1984,8.0,
+834ec97d,no program found (exhausted),,2299,0.46,
+8403a5d5,no program found (exhausted),,2169,1.76,
+846bdb03,no program found (timeout),,4573,8.0,
+855e0971,no program found (timeout),,3099,8.0,
+85c4e7cd,no program found (timeout),,1864,8.0,
+868de0fa,no program found (exhausted),,2197,2.1,
+8731374e,no program found (timeout),,1058,8.0,
+88a10436,no program found (exhausted),,4220,3.07,
+88a62173,no program found (exhausted),,3270,1.37,
+890034e9,no program found (timeout),,1312,8.0,
+8a004b2b,no program found (timeout),,4551,8.0,
+8be77c9e,SOLVED,1,16,0.02,mirror_v
+8d5021e8,no program found (exhausted),,2039,0.31,
+8d510a79,no program found (exhausted),,3247,3.76,
+8e1813be,no program found (timeout),,2878,8.0,
+8e5a5113,no program found (exhausted),,9480,6.66,
+8eb1be9a,no program found (exhausted),,1594,1.4,
+8efcae92,no program found (exhausted),,2142,3.81,
+8f2ea7aa,no program found (exhausted),,3232,1.78,
+90c28cc7,no program found (timeout),,1075,8.01,
+90f3ed37,no program found (exhausted),,2031,1.91,
+913fb3ed,no program found (exhausted),,2771,3.59,
+91413438,no program found (exhausted),,3142,0.68,
+91714a58,no program found (timeout),,3477,8.0,
+9172f3a0,SOLVED,1,10,0.02,up3
+928ad970,no program found (exhausted),,4406,4.93,
+93b581b8,no program found (timeout),,11302,8.0,
+941d9a10,no program found (exhausted),,2341,3.33,
+94f9d214,SOLVED,1,54,0.12,"ud_or  + colour map {0: 2, 1: 0}"
+952a094c,no program found (timeout),,2816,8.0,
+9565186b,"overfit: fits demos, wrong on test",3,2529,1.03,"roll_right -> remove_singletons -> roll_left  + colour map {0: 5, 8: 5, 3: 5}"
+95990924,no program found (exhausted),,2727,1.96,
+963e52fc,no program found (exhausted),,3096,1.61,
+97999447,no program found (exhausted),,4178,2.76,
+97a05b5b,no program found (timeout),,1483,8.0,
+98cf29f8,no program found (exhausted),,3200,3.18,
+995c5fa3,no program found (exhausted),,3194,2.72,
+99b1bc43,SOLVED,1,51,0.14,ud_xor  + colour map {1: 3}
+99fa7670,no program found (exhausted),,5461,3.1,
+9aec4887,no program found (timeout),,4140,8.0,
+9af7a82c,no program found (exhausted),,3322,0.93,
+9d9215db,no program found (exhausted),,3305,4.85,
+9dfd6313,SOLVED,1,7,0.02,transpose
+9ecd008a,no program found (timeout),,982,8.0,
+9edfc990,no program found (timeout),,1320,8.0,
+9f236235,no program found (timeout),,3323,8.01,
+a1570a43,no program found (exhausted),,2816,1.82,
+a2fd1cf0,no program found (exhausted),,1522,1.68,
+a3325580,no program found (timeout),,2890,8.0,
+a3df8b1e,no program found (exhausted),,535,0.21,
+a416b8f3,SOLVED,1,13,0.05,tile_h2
+a48eeaf7,no program found (exhausted),,2153,1.79,
+a5313dff,SOLVED,1,58,0.21,fill_holes(1)
+a5f85a15,no program found (exhausted),,3379,0.6,
+a61ba2ce,no program found (exhausted),,4888,6.41,
+a61f2674,SOLVED,2,323,0.44,recolor_largest(1) -> recolor_smallest(2)  + colour map {5: 0}
+a64e4611,no program found (timeout),,1352,8.01,
+a65b410d,no program found (exhausted),,1157,0.76,
+a68b268e,no program found (timeout),,5315,8.0,
+a699fb00,no program found (exhausted),,1669,0.69,
+a740d043,SOLVED,2,337,0.46,remove_color(1) -> crop_bbox
+a78176bb,no program found (exhausted),,3761,2.69,
+a79310a0,SOLVED,1,421,0.2,roll_down  + colour map {8: 2}
+a85d4709,no program found (exhausted),,2000,0.43,
+a87f7484,no program found (exhausted),,5094,1.66,
+a8c38be5,no program found (timeout),,1706,8.0,
+a8d7556c,no program found (exhausted),,1573,3.25,
+a9f96cdd,no program found (exhausted),,1537,0.51,
+aabf363d,"overfit: fits demos, wrong on test",0,1,0.0,"(identity)  + colour map {2: 4, 4: 0, 3: 6, 6: 0}"
+aba27056,no program found (exhausted),,3599,1.73,
+ac0a08a4,no program found (exhausted),,8400,1.79,
+ae3edfdc,no program found (exhausted),,3749,6.38,
+ae4f1146,SOLVED,2,353,0.6,keep_color(1) -> crop_largest  + colour map {0: 8}
+aedd82e4,no program found (exhausted),,2212,0.41,
+af902bf9,no program found (exhausted),,2056,1.27,
+b0c4d837,no program found (exhausted),,1226,0.74,
+b190f7f5,no program found (exhausted),,5554,1.69,
+b1948b0a,SOLVED,0,20,0.06,(identity)  + colour map {6: 2}
+b230c067,SOLVED,1,51,0.2,"recolor_smallest(1)  + colour map {1: 2, 8: 1}"
+b27ca6d3,no program found (exhausted),,1598,1.39,
+b2862040,no program found (exhausted),,913,1.3,
+b527c5c6,no program found (exhausted),,1991,1.23,
+b548a754,no program found (exhausted),,4209,3.97,
+b60334d2,no program found (exhausted),,1771,1.15,
+b6afb2da,no program found (exhausted),,2746,3.45,
+b7249182,no program found (exhausted),,3818,2.35,
+b775ac94,no program found (timeout),,982,8.01,
+b782dc8a,no program found (timeout),,2319,8.0,
+b8825c91,SOLVED,2,32,0.78,remove_color(4) -> sym_lr
+b8cdaf2b,no program found (exhausted),,4617,1.28,
+b91ae062,no program found (exhausted),,10214,2.89,
+b94a9452,"overfit: fits demos, wrong on test",3,3143,3.77,"crop_bbox -> remove_color(4) -> fill_holes(4)  + colour map {2: 4, 4: 2, 1: 3, 3: 1, 0: 6, 6: 4}"
+b9b7f026,"overfit: fits demos, wrong on test",3,1077,1.87,"crop_largest -> dedup_rows -> dedup_cols  + colour map {2: 6, 7: 5, 1: 2}"
+ba26e723,no program found (exhausted),,637,0.28,
+ba97ae07,no program found (timeout),,4854,8.0,
+bb43febb,no program found (exhausted),,2208,2.28,
+bbc9ae5d,no program found (exhausted),,1610,0.26,
+bc1d5164,no program found (exhausted),,4990,1.99,
+bd4472b8,no program found (exhausted),,3914,2.14,
+bda2d7a6,no program found (exhausted),,7500,4.88,
+bdad9b1f,no program found (exhausted),,1975,1.17,
+be94b721,SOLVED,1,14,0.07,crop_largest
+beb8660c,no program found (timeout),,4840,8.0,
+c0f76784,no program found (exhausted),,3303,5.57,
+c1d99e64,no program found (exhausted),,3792,6.34,
+c3e719e8,no program found (exhausted),,5201,1.76,
+c3f564a4,no program found (timeout),,1408,8.0,
+c444b776,no program found (timeout),,2831,8.0,
+c59eb873,SOLVED,1,9,0.02,up2
+c8cbb738,no program found (exhausted),,4172,5.83,
+c8f0f002,SOLVED,0,148,0.19,(identity)  + colour map {7: 5}
+c909285e,no program found (timeout),,879,8.0,
+c9e6f938,SOLVED,1,467,0.2,mirror_h
+c9f8e694,no program found (exhausted),,5939,7.54,
+caa06a1f,no program found (exhausted),,3270,2.47,
+cbded52d,no program found (exhausted),,6052,6.74,
+cce03e0d,no program found (exhausted),,1839,0.46,
+cdecee7f,no program found (timeout),,3364,8.0,
+ce22a75a,no program found (exhausted),,1498,0.67,
+ce4f8723,SOLVED,1,33,0.11,ud_or  + colour map {1: 3}
+ce602527,no program found (exhausted),,3105,7.49,
+ce9e57f2,no program found (exhausted),,1475,1.09,
+cf98881b,no program found (exhausted),,4531,3.38,
+d037b0a7,SOLVED,3,2716,1.23,tile_v2 -> connect_v -> top_half
+d06dbe63,no program found (exhausted),,983,1.0,
+d07ae81c,no program found (exhausted),,3716,6.9,
+d0f5fe59,no program found (exhausted),,1486,0.98,
+d10ecb37,no program found (exhausted),,7659,5.8,
+d13f3404,no program found (exhausted),,5657,1.51,
+d22278a0,no program found (exhausted),,2727,1.27,
+d23f8c26,no program found (exhausted),,9078,4.67,
+d2abd087,no program found (exhausted),,2609,2.52,
+d364b489,no program found (exhausted),,2798,4.21,
+d406998b,no program found (exhausted),,1268,0.61,
+d43fd935,no program found (exhausted),,5942,7.59,
+d4469b4b,no program found (exhausted),,2730,1.05,
+d4a91cb9,no program found (exhausted),,1903,1.84,
+d4f3cd78,no program found (exhausted),,1786,1.76,
+d511f180,SOLVED,0,1,0.0,"(identity)  + colour map {8: 5, 5: 8}"
+d5d6de2d,SOLVED,1,61,0.21,fill_holes(3)  + colour map {2: 0}
+d631b094,no program found (exhausted),,3061,0.61,
+d687bc17,no program found (timeout),,3182,8.0,
+d6ad076f,no program found (timeout),,4920,8.0,
+d89b689b,no program found (timeout),,3153,8.0,
+d8c310e9,no program found (exhausted),,3910,2.76,
+d90796e8,no program found (exhausted),,4053,1.15,
+d9f24cd1,no program found (exhausted),,2104,1.81,
+d9fac9be,SOLVED,2,3,0.01,rot90 -> crop_smallest
+dae9d2b5,SOLVED,1,308,0.2,lr_or  + colour map {1: 6}
+db3e9e38,no program found (exhausted),,1118,0.43,
+db93a21d,no program found (exhausted),,1616,1.21,
+dbc1a6ce,no program found (exhausted),,1541,0.74,
+dc0a314f,no program found (timeout),,1451,8.0,
+dc1df850,no program found (exhausted),,4854,2.1,
+dc433765,no program found (exhausted),,1930,0.36,
+ddf7fa4f,no program found (timeout),,3876,8.0,
+de1cd16c,"overfit: fits demos, wrong on test",3,3582,6.28,"remove_color(5) -> remove_color(8) -> crop_smallest  + colour map {6: 8, 1: 2, 4: 6, 2: 4}"
+ded97339,SOLVED,1,193,0.2,connect_hv
+e179c5f4,no program found (exhausted),,642,0.27,
+e21d9049,no program found (exhausted),,3055,2.11,
+e26a3af2,no program found (timeout),,1547,8.0,
+e3497940,SOLVED,2,114,0.54,sym_lr -> left_half
+e40b9e2f,no program found (exhausted),,7065,6.86,
+e48d4e1a,no program found (exhausted),,4428,4.18,
+e5062a87,no program found (exhausted),,2778,3.55,
+e509e548,no program found (exhausted),,2240,4.34,
+e50d258f,no program found (exhausted),,4054,5.7,
+e6721834,no program found (timeout),,1585,8.0,
+e73095fd,no program found (exhausted),,1454,1.87,
+e76a88a6,no program found (exhausted),,5650,5.91,
+e8593010,no program found (exhausted),,2409,5.27,
+e8dc4411,no program found (exhausted),,3976,3.94,
+e9614598,no program found (exhausted),,1386,0.82,
+e98196ab,no program found (exhausted),,6153,4.97,
+e9afcf9a,no program found (exhausted),,1269,0.38,
+ea32f347,SOLVED,2,386,0.64,recolor_largest(1) -> recolor_smallest(2)  + colour map {5: 4}
+ea786f4a,no program found (exhausted),,1013,0.22,
+eb281b96,no program found (exhausted),,1083,0.38,
+eb5a1d5d,SOLVED,2,25,0.77,dedup_rows -> dedup_cols
+ec883f72,no program found (exhausted),,8580,4.52,
+ecdecbb3,no program found (exhausted),,1749,1.01,
+ed36ccf7,SOLVED,1,2,0.0,rot90
+ef135b50,no program found (exhausted),,2313,2.3,
+f15e1fac,no program found (exhausted),,1531,1.2,
+f1cefba8,no program found (exhausted),,3603,4.7,
+f25fbde4,SOLVED,2,274,0.21,up2 -> crop_bbox
+f25ffba3,SOLVED,1,22,0.08,sym_ud
+f2829549,SOLVED,1,36,0.11,"lr_or  + colour map {1: 0, 0: 3}"
+f35d900a,no program found (exhausted),,3933,4.89,
+f5b8619d,no program found (exhausted),,3122,0.67,
+f76d97a5,no program found (exhausted),,2097,0.65,
+f8a8fe49,no program found (exhausted),,2334,2.59,
+f8b3ba0a,no program found (timeout),,4981,8.0,
+f8c80d96,no program found (exhausted),,4522,4.29,
+f8ff0b80,no program found (timeout),,7740,8.0,
+f9012d9b,no program found (exhausted),,4032,1.63,
+fafffa47,SOLVED,1,27,0.07,"ud_or  + colour map {0: 2, 1: 0}"
+fcb5c309,no program found (exhausted),,3838,3.15,
+fcc82909,no program found (timeout),,3918,8.0,
+feca6190,no program found (exhausted),,4703,0.8,
+ff28f65a,no program found (exhausted),,2128,0.54,
+ff805c23,no program found (timeout),,2252,8.0,

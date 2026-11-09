@@ -1,0 +1,28 @@
+strategy,task,result,expanded,generated,seconds,program
+bfs,007bbfb7,no program found (exhausted),3762,3761,0.605,
+bfs,00d62c1b,SOLVED,37,1449,0.214,fill_holes(4)
+bfs,0ca9ddb6,no program found (exhausted),4729,4728,4.205,
+bfs,1e0a9b12,SOLVED,29,3967,0.153,gravity_down
+bfs,1f85a75f,"overfit: fits demos, wrong on test",14,916,0.143,crop_largest
+bfs,22eb0ac0,SOLVED,20,2339,0.208,connect_h
+bfs,25d8a9c8,"overfit: fits demos, wrong on test",495,2007,0.278,"roll_right -> recolor_smallest(5)  + colour map {4: 5, 2: 0, 3: 0, 5: 0, 7: 0, 6: 5, 9: 5, 1: 5}"
+bfs,28bf18c6,SOLVED,422,2594,0.326,crop_bbox -> tile_h2
+bfs,3af2c5a8,SOLVED,19,1015,0.031,mirror4
+greedy,007bbfb7,no program found (exhausted),3762,3761,0.613,
+greedy,00d62c1b,SOLVED,182,939,0.21,fill_holes(4)
+greedy,0ca9ddb6,no program found (exhausted),4729,4728,4.207,
+greedy,1e0a9b12,SOLVED,2,216,0.006,gravity_down
+greedy,1f85a75f,"overfit: fits demos, wrong on test",2,98,0.011,crop_largest
+greedy,22eb0ac0,SOLVED,69,2012,0.203,connect_h
+greedy,25d8a9c8,"overfit: fits demos, wrong on test",312,2447,0.109,"remove_color(2) -> recolor_largest(5) -> remove_singletons  + colour map {3: 0, 7: 0, 9: 5, 4: 0}"
+greedy,28bf18c6,SOLVED,5,207,0.006,crop_bbox -> tile_h2
+greedy,3af2c5a8,SOLVED,2,84,0.002,mirror4
+astar,007bbfb7,no program found (exhausted),3762,3761,0.608,
+astar,00d62c1b,SOLVED,40,1185,0.211,fill_holes(4)
+astar,0ca9ddb6,no program found (exhausted),4729,4728,4.252,
+astar,1e0a9b12,SOLVED,2,216,0.006,gravity_down
+astar,1f85a75f,"overfit: fits demos, wrong on test",2,98,0.011,crop_largest
+astar,22eb0ac0,SOLVED,50,4440,0.203,connect_h
+astar,25d8a9c8,"overfit: fits demos, wrong on test",316,2961,0.129,"remove_color(2) -> recolor_largest(5) -> remove_singletons  + colour map {3: 0, 7: 0, 9: 5, 4: 0}"
+astar,28bf18c6,SOLVED,4,207,0.006,crop_bbox -> tile_h2
+astar,3af2c5a8,SOLVED,2,84,0.002,mirror4
